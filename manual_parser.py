@@ -1,0 +1,961 @@
+import json
+
+data = [
+    {
+        "category": "General",
+        "name": "S. Jawaahar, General Manager, M/s. Anusham Farm Machinery and Power Equipments Pvt. Ltd.",
+        "address": "232, Sathy road, Gobi (opp. Court) Erode dist – 638 452",
+        "phone": ["9842903993", "9443305117"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "C.R.Venkatpati M/s. Sri Annapoorna Agro Industries",
+        "address": "8-A, Iyer hospital Road, Singanallur, Coimbatore – 641 005",
+        "phone": ["9443031664"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "S.V. Chinnaraju, Managing Director M/s. Vigneshwara Altek Engineers",
+        "address": "4/16, Rathinagiri Road, VetrimuruganNagar, Vilankurichi, Coimbatore - 641 005.",
+        "phone": ["0422–3205090", "0422–2666953", "0422-2574616"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "Vijayakumar M/s. Bharath Farm Implement",
+        "address": "126, Tirupur Road, Udumalpet – 642 126",
+        "phone": ["04225521222", "9842265180", "9894023892"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "R.Rajendran, General Manger, M/s.Sri Bhuvaneswari Industries",
+        "address": "1332, Avanashi Road, Peelamedu ( Near Esso Bank) Coimbatore – 641 004",
+        "phone": ["04222560193", "2567540"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "K.R.Anandha Sainam, M/s. LCT Feeders",
+        "address": "1985/86, Trichy Road, Singanallur, Coimbatore -641 005",
+        "phone": ["04222312047", "9843035525"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "A.Shakthivel Murugan, M/s Sri Kannaiamman Industries",
+        "address": "Gandhi Nagar, K.M.M. School Road, Irugur post, Ondipudur via, Coimbatore – 641 103",
+        "phone": ["04222626390"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "P.Sundaraj M/s. K.G. Industries",
+        "address": "Iyer Hospital Bus Stop, 25/30,RajajiNagar,TrichyRoad, Singanallur (P.O.), Coimbatore - 641 005",
+        "phone": ["04222321900", "9842230070"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s.Bull Agro Implements.",
+        "address": "663, Trichy Road, Ravathur Po., Coimbatore -641 103",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "KAR Jaganathan, M/s Jai Sakthi Engineering",
+        "address": "73, Sathya garden, Thekkupalayam post, Mettupalayam Road, Coimbator – 641 020",
+        "phone": ["9443817399", "9994623535"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "C.V.Madeswaran, M/s. KSNM Marketing",
+        "address": "Teachers Colony, Kurumbapalyam, Vedapatti post, Coimbatore – 641 007",
+        "phone": ["9363261175", "04223261175"],
+        "email": ["ksnm@hotmail.com"],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "Sivakumar, Manager, M/s. Farm Implments (India) Pvt Ltd.",
+        "address": "13, Kumarappa Street, Nungambakkam Chennai – 600 034.",
+        "phone": ["0448261676", "8273493"],
+        "email": ["rotavato@vsnl.com"],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s Veni Cottage Industries",
+        "address": "22-A, Raju Naidu 4th Street, Sathy Road, Ganapathy, Coimbatore – 641 006.",
+        "phone": ["0422–2330844", "09363147696"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "GBN Saimagnath B.E. Managing Director, Trident farm implements (P) Ltd.",
+        "address": "39, SIDCO Industrial Estate, Ambattur, Chennai – 600 098",
+        "phone": ["9444126839", "044–26244743", "26244968"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "P. Rangasamy Agro links Manufacturers & Dealers",
+        "address": "91, (Old No. 286) Chinnaswamy Naidu Road, New Siddhapudur, Coimbatore – 641 044",
+        "phone": ["0422–2526871", "2526673", "9363104775"],
+        "email": ["agrolinks@yahoo.com"],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "Sri Rama Trailers",
+        "address": "Office : T.S. Sidco Industrial estate, Coimbatore – 21",
+        "phone": ["0422–2672672"],
+        "email": [],
+        "website": ["www.srtindia.com"]
+    },
+    {
+        "category": "General",
+        "name": "K.Sundhar, Bhanumathe Agencies",
+        "address": "68, Nehru street, Ram Nagar, Coimbatore -9",
+        "phone": ["04224996653", "98433094587"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "A. Palanivel, Sri Kaliyamman engg works",
+        "address": "Rasipuram main road, Vaiyappamalai 637410",
+        "phone": ["04288233180", "233170"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "K. Sundrarajan,K.Sekar, Raja industries",
+        "address": "No 49/10-B(30) Dharapuram Road, Udumalpet- 642126",
+        "phone": ["0425222628", "222629", "224812"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "V.Bhoopathi, Proprietor, Bhuvana enterprises",
+        "address": "533, Near Kavitha theater, Kasthuri bhavan hotel, I st floor, Ram Nagar, Coimbatore - 641 009",
+        "phone": ["04222231956", "2233632"],
+        "email": ["bhuvanaenterprises@yahoo.com"],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "Srivalasumani Hitech Engineering Company",
+        "address": "Sivagiri- 638109, Erode district",
+        "phone": ["240478", "240578", "9443140478"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "N.Varadharaj, Manager Sujatha Agro Engineers and Traders Sujatha Agro Equipments Pvt Ltd",
+        "address": "162, Venkatasamy Road East, R.S.Puram, Coimbator-2",
+        "phone": ["0422553925", "555793"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "REX.Thiyagarajan, Sales Executive South east farm equipments Pvt Ltd",
+        "address": "Trichy Main Road Thammampatti, Salem dt- 636 113",
+        "phone": ["0428226638"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "Saravana Kesavan industries",
+        "address": "87, dharapuram road Udumalpet- 642 126",
+        "phone": ["0452273939", "224495"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "Sri sivasakthi Vinayaga Trailers",
+        "address": "175/2, Anna salai near Fire station,Thavittu palayam,Anthiyur-638 501 Erode Dt.",
+        "phone": ["04256-261112", "9842766112", "9442161112", "9842086540"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s. Gomathi Engineering Service",
+        "address": "3/53 (SF NO. 148/5) Anthiyur Road, Chinnagounden valasu, Kunnathur, Erode Dt., Pin : 641 018",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s. Coimbatore Agriculture Tractor & Tiller Pvt Ltd.",
+        "address": "S.F.No. 467, Stanes Garden, Thudiyalur Post, Coimbatore – 641 034",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s. Valampuri Industries",
+        "address": "2, Thiyagai kumaram Street, P.N.Pudur, Coimbatore – 641 041",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s B Kay Machine Works",
+        "address": "Opp. Kovai Medical Centre Hospital, 187, Avanashi Road, Civil Aerodrome post, Coimbatore – 641 014.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s. Kumaresh Agencies",
+        "address": "518, Near Kavitha theater, Nehru Street, Ram Nagar, Coimbatore - 641 009",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s. K.C.R. Industries",
+        "address": "Trichy Road, Singanallur, Coimbatore -641 005",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s Arul Engineering Works",
+        "address": "13 A, Ramanna Nagar, Near J.M. Hospital, Thadagam Road, Coimbatore – 641 025",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s SKY Industries",
+        "address": "70/1-A, Bharathi Nagar, K.Vadamaduri, Coimbatore – 641 017",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s Aero Tech Engg.",
+        "address": "5/9, Lakshmi Vinayagar Road, 8th Street, Ganapathy Pudur, Coimbatore – 641 006.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s Vivega Engineerings",
+        "address": "Nava India Road, Peelamedu, Coimbatore – 641 004.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "General",
+        "name": "M/s Sri Guru Industries",
+        "address": "Srividya Colony, Edayarpalayam, Thadagam Road, Coimbatore – 641 025",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "India Tractors",
+        "name": "Eicher International Ltd, India. Eicher Tractors",
+        "address": "Plot No 4, Sector 4, Ballabgarh, Haryana 121004, India",
+        "phone": ["91129241924", "91129241923"],
+        "email": [],
+        "website": ["www.eicherworld.com"]
+    },
+    {
+        "category": "India Tractors",
+        "name": "Escorts Limited, India. Escorts Limited (Agri Machinery Group)",
+        "address": "18/4, Mathura Road, Faridabad 121 007, Haryana, India.",
+        "phone": ["911295283071", "911295284802"],
+        "email": ["Vijay_Raina@escorts.co.in"],
+        "website": ["www.escortsagri.com"]
+    },
+    {
+        "category": "India Tractors",
+        "name": "International Tractors Ltd, India. International Tractors Ltd",
+        "address": "704 Nirmal Tower, Barakhamba Road, New Dehli 110001",
+        "phone": ["91113318911", "91113714768"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "India Tractors",
+        "name": "Mahindra & Mahindra Ltd, India. Mahindra & Mahindra Ltd, Tractor Division",
+        "address": "Akurli Road, Kandivli East, Mumbai 400101",
+        "phone": ["91228874651", "91228876694"],
+        "email": [],
+        "website": ["www.mahindraworld.com"]
+    },
+    {
+        "category": "India Tractors",
+        "name": "Nav Bharat Industries, India. Nav Bharat Industries",
+        "address": "B-25, Hathras Road, Foundry Ngr., Agra 282006",
+        "phone": ["915623364728"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "India Tractors",
+        "name": "Punjab Tractor Ltd, India Punjab Tractors Ltd",
+        "address": "PO Box 6, Phase IV, SAS Nagar, Chandigarh 160055",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "India Tractors",
+        "name": "International Tractors Ltd, India",
+        "address": "283 Agcr Enclave Karkarduma New Delhi 110011",
+        "phone": ["91112163785", "2163789", "91113714768"],
+        "email": [],
+        "website": ["www.sonalikagroup.com"]
+    },
+    {
+        "category": "India Tractors",
+        "name": "Tafe Tractors, India. Tafe Tractors",
+        "address": "35 Nungambakkam High Road, Nungambakkam, Chennai 600 034, India.",
+        "phone": ["91448279073", "91448260224"],
+        "email": [],
+        "website": ["www.tafe.com"]
+    },
+    {
+        "category": "India Tractors",
+        "name": "VST Tillers Tractors Ltd, India VST Tillers Tractors Ltd",
+        "address": "PO Box 4801, Bangalore 560048,",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "India Tractors",
+        "name": "Sonalika Agriculture Industries, India.",
+        "address": "704, Nirmal Tower 26, Barakhamba Road, New Delhi 110001",
+        "phone": ["91113318911", "3739539", "91-11-3714768"],
+        "email": ["lachman@del2.vsnl.net.in"],
+        "website": ["www.sonalikagroup.com"]
+    },
+    {
+        "category": "India Tractors",
+        "name": "Gujarat Tractor Corporation Ltd,, India",
+        "address": "Near Vishwamitri Rly. Overbridge, Vadodara 390011",
+        "phone": ["91-265-311617", "340507", "339547", "91-265-338156"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "India Tractors",
+        "name": "Farmparts Company, India",
+        "address": "34-Regal Building, Parliament Street, New Delhi 110001",
+        "phone": ["91-11-311753", "310768", "91-11-311185"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "India Tractors",
+        "name": "Farm Implements (I) Pvt Ltd, India",
+        "address": ",No.10 Kumarappa Street, Nungambakkam, Chennai-600 034",
+        "phone": ["91-44-8261676", "82235007", "91-44-8265345"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "India Tractors",
+        "name": "New Holland Tractors India Pvt Ltd, India",
+        "address": ", 210, Okhla Industrial Area - III 110 020, New Delhi",
+        "phone": ["91116932207", "10", "12", "6848140", "54", "91-11-6932208"],
+        "email": ["delhi.rchoda@newholland.com"],
+        "website": ["www.newholland.com"]
+    },
+    {
+        "category": "India Tractors",
+        "name": "Brakes India Ltd, Brakes India Limited",
+        "address": "Padi, Chennai - 600 050",
+        "phone": ["91-44-6258161", "91-44-6257010"],
+        "email": ["bitvs@md2.vsnl.net.in"],
+        "website": ["www.brakesindia.com"]
+    },
+    {
+        "category": "POWER TILLERS",
+        "name": "A.I.C. Machinery Co. Ltd., India. A.G. Agro Industries",
+        "address": "Near Krishna Park Hotel, Gondal Road, NH 8-B, Vavadi Rajkot - 360 004, Gujarat",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "POWER TILLERS",
+        "name": "Amar Agricultural Implements, India. Amar Agricultural Implements",
+        "address": "Amar Street, Janta Nagar, Gill Road, Ludhiana.141003",
+        "phone": ["911612491780", "911612491780"],
+        "email": ["info@amaragri.com"],
+        "website": ["www.amaragri.com"]
+    },
+    {
+        "category": "POWER TILLERS",
+        "name": "Kavi Agro Agency, India. Kavi Agro Agency",
+        "address": "60/8, Anne's Complex, Melapudur Main Road, Trichy - 620 001,",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "POWER TILLERS",
+        "name": "Kerala Agro Machinery Corporation Ltd, India Kerala Agro Machinery Corporation Ltd",
+        "address": "Athani-683585, Ernakulam District, Kerala",
+        "phone": ["91484474301", "91484474589"],
+        "email": ["mail@kamcoindia.com"],
+        "website": ["www.kamcoindia.com"]
+    },
+    {
+        "category": "POWER TILLERS",
+        "name": "National Engineering Co (Madras) Pvt Ltd, Universal Engineers & Traders",
+        "address": "Commerce House, 3rd Floor, 2 Ganesh Chandra Avenue, Calcutta 700 013",
+        "phone": ["91332219185", "91332374905"],
+        "email": ["vikaskhosla_@hotmail.com"],
+        "website": []
+    },
+    {
+        "category": "POWER TILLERS",
+        "name": "VST Tillers Tractors Ltd, India. VST Tillers Tractors Ltd",
+        "address": "PO Box 4801, Bangalore 560048",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "PRIMARY TILLAGE SUBSOILERS",
+        "name": "Beri Udyog Pvt Ltd., Beri Udyog Private Limited",
+        "address": "100-101, HSIDC, Industrial Area, Sector 3, Karnal - 132 001, Haryana",
+        "phone": ["911842221570", "911842221574"],
+        "email": ["fieldking@gmail.com", "beriudyog@hotmail.com"],
+        "website": ["www.fieldking.com"]
+    },
+    {
+        "category": "PRIMARY TILLAGE SUBSOILERS",
+        "name": "Bhavani Implements Bhavani Implements",
+        "address": "Bhavani Chambers, Ashram Road, Navrangpura, Ahmedabad, 380 009, Gujarat,",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "PRIMARY TILLAGE SUBSOILERS",
+        "name": "HIMCO. HIMCO.",
+        "address": "C-5, Industrial Estate, Clutterbuckganj, Bareilly-243 502, U.P",
+        "phone": ["915813090385", "915812480994"],
+        "email": ["himco_india@rediffmail.com"],
+        "website": ["www.indiamart.com"]
+    },
+    {
+        "category": "PRIMARY TILLAGE SUBSOILERS",
+        "name": "Punjab Agro Sales Punjab Agro Sales",
+        "address": "Opposite New Grain Market, G.T.Road, Karnal, Haryana, 132001,",
+        "phone": ["91-184-2220113", "91-184-2220114"],
+        "email": [],
+        "website": ["www.krishiking.com"]
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Anant Brand Machines Anant Brand Machines",
+        "address": "97-98 D, Polo Ground Industrial Estate, Indore -452 003, (MP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Anil Industries Anil Industries",
+        "address": "Industrial Area, Bina - 470 113, (MP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Aruna Industries Aruna Industries",
+        "address": "118 B, Industrial Estate, Kattedan, Hyderabad - 500 077, (AP)",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Atul Prajapati Engineering Works Beri Udyog Private Limited",
+        "address": "100-101, HSIDC, Industrial Area, Sector 3, Karnal - 132 001, Haryana .",
+        "phone": ["911842221570", "911842221574"],
+        "email": ["fieldking@gmail.com", "beriudyog@hotmail.com"],
+        "website": ["www.fieldking.com"]
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Beri Udyog Pvt Ltd. Beri Udyog Private Limited",
+        "address": "100-101, HSIDC, Industrial Area, Sector 3, Karnal - 132 001, Haryana.",
+        "phone": ["911842221570", "911842221574"],
+        "email": ["fieldking@gmail.com", "beriudyog@hotmail.com"],
+        "website": ["www.fieldking.com"]
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Bharath Foundry & Engineering Works Bharath Foundry & Engineering Works",
+        "address": "D-2 Shed, Industrial Estate, TB Dam Road, Hospet, 583203, Karnataka.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Bhavani Implements Bhavani Implements",
+        "address": "Bhavani Chambers, Ashram Road, Navrangpura, Ahmedabad, 380 009, Gujarat",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Bhui Agricultural Works, India. Bhui Agricultural Works",
+        "address": "GT Road, Malout, Mukstar - 152 107, Punjab, India.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Chakkaram Plough Industries Chakkaram Plough Industries",
+        "address": "Post Box No. 16, Melur, District Madurai - 625 007, (TN)",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Deccan Farm Equipments Deccan Farm Equipments",
+        "address": "F-10/12, MIDC, Shiroli, Kolhapur - 416 011, Maharashtra",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "MOULDBOARD PLOUGHS",
+        "name": "Delux Agro Implements Pvt. Ltd., Delux Agro Implements Pvt. Ltd.",
+        "address": "GT Road, Near Railway Phatak, Malout, Mukstar - 152 026, Punjab",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Elseetee Industries, Elseetee Industries",
+        "address": "Trichy Road, Singanallur, Coimbatore, 641005.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Farm Implements (India) Pvt. Ltd., Farm Implements (India) Pvt. Ltd.",
+        "address": "No 16-17, N.R.N. Colony, Villivakkam, Chennai, 600049, (TN)",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Ganesh Krishi Udyog, Ganesh Krishi Udyog",
+        "address": "GT Road, Near Railway Phatak, Malout, Mukstar, 152026,, Punjab.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Gujarat State Export Corporation Ltd, Gujarat State Export Corporation Ltd",
+        "address": "Gujarat Chambers Building, Ashram Road, Ahmedabad 380009, Gujarat.",
+        "phone": ["91796582350", "91796583218"],
+        "email": ["gsecl@vsnl.com"],
+        "website": ["www.gujaratindustry.gov.in"]
+    },
+    {
+        "category": "THRESHER",
+        "name": "Hans Engineering Workshop Pvt. Ltd., Hans Engineering Workshop Pvt. Ltd.",
+        "address": "72-A Suraj Kund Road, Meerut - 250 001, (UP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Harjinder Agricultural Industries. Harjinder Agricultural Industries",
+        "address": "Jhansi Road, Dabra, Gwalior - 474 002, (MP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "HIMAGRICO, HIMAGRICO, H.P. Agro Industries",
+        "address": "Jassur, Kangra, 176002, (HP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "HIMCO., Indo-Farm Agro Industries",
+        "address": "W-54/A, MIDC Ahmednagar - 414111, Maharashtra.",
+        "phone": ["91241777757", "91241777487"],
+        "email": ["indofarm@pn3.vsnl.in"],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Indo-Farm Agro Industries. Indo-Farm Agro Industries",
+        "address": "W-54/A, MIDC Ahmednagar - 414111, Maharashtra.",
+        "phone": ["91241777757", "91241777487"],
+        "email": ["indofarm@pn3.vsnl.in"],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Kanya Impex Pvt Ltd",
+        "address": "24/1, 13th Main Vijayanagar Bangalore 560040",
+        "phone": ["91803306624", "91803306624"],
+        "email": ["pmanand@bgl.vsnl.net.in"],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Karshak Industries. Karshak Industries",
+        "address": "No. 18-3014, Chatrinaka, Laldarwaja, Hyderabad - 500 253, (AP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Kohali Agriculture Equipment. Kohali Agriculture Equipment",
+        "address": "Civil Lines, Rudrapur, US Nagar - 263 153, Uttaranchal,",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Lalwani Industries Lalwani Industries",
+        "address": "Lalwani Compound, Hamidia Road, Bhopal - 462 001, (MP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Punjab Agro Sales Punjab Agro Sales",
+        "address": "Opposite New Grain Market, G.T.Road, Karnal, Haryana, 132001.",
+        "phone": ["911842220113", "911842220114"],
+        "email": [],
+        "website": ["www.krishiking.com"]
+    },
+    {
+        "category": "THRESHER",
+        "name": "Rajasthan Mechanical Works Limited Rajasthan Mechanical Works Ltd.",
+        "address": "A-188(B) Road, No. 6-D V.K.I. Area, Jaipur - 302 013, Rajasthan.",
+        "phone": ["911412331549", "911412332631"],
+        "email": ["brahmpuri@hotmail.com"],
+        "website": ["www.brahmpuri.com"]
+    },
+    {
+        "category": "THRESHER",
+        "name": "Ramakumar Industries Ramakumar Industries",
+        "address": "Gnanambikai Mills, Coimbatore-641 029(TN).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Sam Agro Industries Sam Agro Industries",
+        "address": "Dozian Street Nabha 147201",
+        "phone": ["91176571406", "91176522880"],
+        "email": ["sam@glide.net.in"],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Satnam Engineering Works Satnam Engineering Works",
+        "address": "GT Road, Malout, Mukstar - 152 026, Punjab",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Sherpur Agro Industries Sherpur Agro Industries",
+        "address": "G.T. Road, Focal Point, Ludhiana - 141 010, Punjab",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Steamline Industries Ltd. Steamline Industries Ltd",
+        "address": "11 Saraf Udyog Bhawan, Near Chincholi Phatak, S.V. Road Malad (West), Maharastra 400064.",
+        "phone": ["91228811818", "91228885664"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "TAFE TAFE",
+        "address": "Madras, TN",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Trimurti Agro Industries. Trimurti Agro Industries.",
+        "address": "",
+        "phone": [],
+        "email": [],
+        "website": ["www.trimurtiagro.com"]
+    },
+    {
+        "category": "THRESHER",
+        "name": "Union Forgings Union Forgings",
+        "address": "G.T. Road, Sherpur, Focal Point, Ludhiana, 141010 Punjab.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "U.P. State Agro Industrial Co Ltd. U.P. State Agro Industrial Co Ltd",
+        "address": "Agricultural Workshop, Talkatora Road, Lucknow, 226004 (U.P.).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "THRESHER",
+        "name": "Vishwakarma Agriculture Works Vishwakarma Agriculture Works",
+        "address": "18/206, Rameshwara Appartment, Nr. Vinayak Petrol Pump, Sola Road, Naranpura, Ahmedabad- 380063, Gujarat,",
+        "phone": ["917927487940", "02763270888"],
+        "email": ["info@vishwakarmaindia.com"],
+        "website": ["www.vishwakarmaindia.com"]
+    },
+    {
+        "category": "THRESHER",
+        "name": "Zimidara Agro Implements Pvt. Ltd., Zimidara Agro Implements Pvt. Ltd.",
+        "address": "Dawali Road, Near Government High School, Village Danewala, Malout, Mukstar-152 026, Punjab.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "CHISEL PLOUGHS",
+        "name": "Punjab Agro Sales Punjab Agro Sales",
+        "address": "Opposite New Grain Market, G.T.Road, Karnal, Haryana, 132001.",
+        "phone": ["911842220113", "911842220114"],
+        "email": [],
+        "website": ["www.krishiking.com"]
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Anant Brand Machines. Anant Brand Machines",
+        "address": "97-98 D, Polo Ground Industrial Estate, Indore - 452 003, (MP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Anil Agri-Horticultural Company. Anil Agri-Horticultural Company",
+        "address": "18 Chandra Puri, Near Police Chowki, Sehani Gate, Ghaziabad -201 001, (UP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Anil Industries Annapurna Agro-Industries",
+        "address": "Gandhi Road, Murar, Gwalior, (MP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Annapurna Agro-Industries. Annapurna Agro-Industries",
+        "address": "Gandhi Road, Murar, Gwalior, (MP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Beri Udyog Pvt Ltd. Beri Udyog Private Limited",
+        "address": "100-101, HSIDC, Industrial Area, Sector 3, Karnal - 132 001, Haryana,",
+        "phone": ["91-184-2221570", "91-184-2221574"],
+        "email": ["fieldking@gmail.com", "beriudyog@hotmail.com"],
+        "website": ["www.fieldking.com"]
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Dates Discs Pvt. Ltd., Dates Discs Pvt. Ltd.",
+        "address": "9th Mile Stone, GT Road, Sahibabad, Gaziabad - 201 011, (UP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Deccan Farm Equipments Deccan Farm Equipments",
+        "address": "F-10/12, MIDC, Shiroli, Kolhapur - 416 011, Maharashtra,",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Delux Agro Implements Pvt. Ltd., : Delux Agro Implements Pvt. Ltd.",
+        "address": "GT Road, Near Railway Phatak, Malout, Mukstar - 152 026, Punjab.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Godavari Farm Equipments Godavari Farm Equipments",
+        "address": "Jagtial, Karim Nagar, 505001, (AP).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Gold Field Agri Implements Gold Field Agri Implements",
+        "address": "GT Road, Jalandhar, 144001, Nursery machinery Punjab.",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Kanhaiyalal Ramratan Krishi Yantra Laghu Udyog Kanhaiyalal Ramratan Krishi Yantra Laghu Udyog",
+        "address": "N.h.11 Rampura Dabari, Sikar Road, Jaipur Sikar Road, Jaipur-303 704, Rajasthan.",
+        "phone": ["91-1423-224485"],
+        "email": ["info@krkylu.com"],
+        "website": ["www.krkylu.com"]
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Punjab Agro Sales Punjab Agro Sales",
+        "address": "Opposite New Grain Market, G.T.Road, Karnal, Haryana, 132001.",
+        "phone": ["91-184-2220113", "91-184-2220114"],
+        "email": [],
+        "website": ["www.krishiking.com"]
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Rajasthan Mechanical Works Limited. Rajasthan Mechanical Works Ltd.",
+        "address": "A-188(B) Road, No. 6-D V.K.I. Area, Jaipur - 302 013, Rajasthan.",
+        "phone": ["+91-141-2331549", "+91-141-2332631"],
+        "email": ["brahmpuri@hotmail.com"],
+        "website": ["www.brahmpuri.com"]
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Ramakumar Industries Ramakumar Industries",
+        "address": "Gnanambikai Mills, Coimbatore - 641 029, (TN).",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Ryait Exports Ryait Exports",
+        "address": "",
+        "phone": [],
+        "email": ["export.gsauto@smc.sprintrpg.ems.vsnl.net.in"],
+        "website": ["www.gsgroupindia.com"]
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "Sherpur Agro Industries Sherpur Agro Industries",
+        "address": "G.T. Road, Focal Point, Ludhiana - 141 010, Punjab",
+        "phone": [],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "DISC PLOUGHS",
+        "name": "TAFE TRACTORS Tafe Tractors",
+        "address": "35 Nungambakkam High Road, Nungambakkam, Chennai 600 034.",
+        "phone": ["91448279073", "91448260224"],
+        "email": [],
+        "website": ["www.tafe.com"]
+    },
+    {
+        "category": "Nursery machinery",
+        "name": "Rajdeep Agri Products Pvt.Ltd.",
+        "address": "3279/1, Ranjit Nagar, New Delhi – 110 008",
+        "phone": ["011-2584771", "2", "09810058059", "011–2584773"],
+        "email": [],
+        "website": []
+    },
+    {
+        "category": "Nursery machinery",
+        "name": "Velkan Engineering Pvt. Ltd.",
+        "address": "139/1/7A, Sarvabouma Industrial Area, Behind HSBS –FUTURA Bannerghatta Road, Bangalore – 560 076",
+        "phone": ["080-26480905", "25536481", "9845041389", "080-26636772"],
+        "email": ["mendonza@vsnl.com", "Velkan@vsnl.com"],
+        "website": []
+    },
+    {
+        "category": "Nursery machinery",
+        "name": "M/s SRICOMPS,",
+        "address": "No.3/1, 1st Main Road, Brahmapuram, Ramachandrapuram, Bangalore – 560 021.",
+        "phone": ["080-23420421", "080-23126898"],
+        "email": [],
+        "website": []
+    }
+]
+
+with open('data.json', 'w') as f:
+    json.dump(data, f, indent=4)
+
+print("Manual parsing complete. Data saved to data.json")
